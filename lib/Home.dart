@@ -89,7 +89,7 @@ class _HomeState extends State<Home> {
           ),
           ElevatedButton(
             onPressed: () {
-              Text('$_eventName, $startTime, $endTime');
+              calendarClient.insert(_eventName, startTime, endTime);
             },
             child: Text('Insert Event'),
           ),
